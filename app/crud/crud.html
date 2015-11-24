@@ -1,0 +1,22 @@
+<div ng-controller="crudCtrl as crud"> 
+
+{{crud.product.name}}
+<ul>
+  <li ng-repeat="x in names">
+    {{ x.titles	}}
+	
+	
+  </li>
+</ul>
+<button ng-show="crud.product.purchase">purchase</button>
+</div>
+<!--
+<div ng-app="myApp" ng-controller="customersCtrl"> 
+
+<ul>
+  <li ng-repeat="x in names">
+    {{ x.Name + ', ' + x.Country }}
+  </li>
+</ul>
+
+</div>-->
