@@ -9,6 +9,23 @@ angular.module('App.dashboard', ['ngRoute'])
   });
 }])
 
-.controller('DashboardCtrl', [function() {
-//alert("this the singup page");
-}]);
+
+
+.controller('DashboardCtrl', [
+	'$scope',
+	'$http',
+	'$rootScope',
+	function($scope,$http,$rootScope) {
+
+		
+   $http.get($rootScope.citizenData, {cache: true})
+      .then(function(response) {
+           console.log(response);
+           return response.data.results;
+           $scope.citizens = response.data;
+      });
+     
+
+    }]);
+
+
