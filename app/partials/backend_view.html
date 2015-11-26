@@ -1,0 +1,47 @@
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar" ng-include="'partials/header.html'"></div>
+  
+          
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left side-menu" ng-include="'partials/left_sidebar.html'"></div>
+                       <!-- Left Sidebar End -->
+  
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container" ng-view>
+
+                      <!-- INJECT DASHBOARD VIEW  -->
+
+
+                    </div> <!-- container -->
+
+                </div> <!-- content -->
+
+
+            <div ng-include="'partials/footer.html'">
+              
+            </div>
+
+            </div>
+
+             <!-- Right Sidebar -->
+            <div class="side-bar right-bar nicescroll">
+
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+            
+            </div>
+            <!-- /Right-bar -->
+
+        </div>
+        <!-- END wrapper -->

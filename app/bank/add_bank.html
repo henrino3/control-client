@@ -1,0 +1,164 @@
+ 
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar" ng-include="'../partials/header.html'"></div>
+  
+          
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left side-menu" ng-include="'../partials/left_sidebar.html'"></div>
+                       <!-- Left Sidebar End -->
+  
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container">
+
+                      <!-- INJECT DASHBOARD VIEW  -->
+
+<div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="wrapper-page signup-signin-page">
+                    <div class="card-box">
+                        <div class="panel-heading">
+                            <h3 class="text-center"> <strong class="text-custom">BANK <i class="md md-album"></i> REGISTRATION </strong></h3>
+                        </div>
+        
+                        <div class="panel-body">
+                          <div class="row">
+                                <div class="col-lg-6">
+                                <!-- ADD SUCCESS/ERROR ALERTS HERE -->
+                                <h3></h3>
+                                </div>
+
+
+                             
+                         </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="p-20">
+                                        <form class="form-horizontal m-t-20" ng-sumit>
+                                                                
+                                            <div class="input-group m-t-10">
+                                                 <input type="text" ng-model="name" class="form-control" placeholder="Name">
+                                                <span class="input-group-addon"><i class="fa fa-institution"></i></span>
+                                              </div>
+                                                                
+                                            <div class="input-group m-t-10">
+                                                 <input type="text" ng-model="reg_no" class="form-control" placeholder="Registration No">
+                                                <span class="input-group-addon"><i class="md md-vpn-key"></i></span>
+                                              </div>
+
+                                              <div class="input-group m-t-10">
+                                                <input type="email" ng-model="email" class="form-control" placeholder="Email">
+                                                <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+                                              </div>
+
+                                            <div class="input-group m-t-10">
+                                                <input type="text" ng-model="website" class="form-control" placeholder="Website">
+                                                <span class="input-group-addon"><i class="fa  fa-globe"></i></span>
+                                              </div>
+
+                    
+                                            <div class="input-group m-t-10">
+                                                <input type="text" ng-model="email" class="form-control" placeholder="CEO">
+                                                <span class="input-group-addon"><i class="md md-contacts"></i></span>
+                                              </div>
+                    
+                                            <div class="input-group m-t-10">
+                                                 <input type="text" ng-model="phone" class="form-control" placeholder="Date Founded ">
+                                                <span class="input-group-addon"><i class="md md-settings-cell"></i></span>
+                                              </div>
+                                            
+                                        </form>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="col-lg-6">
+                                    <div class="p-20">
+                                        <form class="form-horizontal m-t-20" action="index.html">
+
+                                         <div class="form-group ">
+                                                <div class="col-xs-12">
+                                                    <select class="form-control">
+                                                            <option>Bank Type</option>
+                                                            <option>Commercial</option>
+                                                            <option>Community</option>
+                                                            <option>Mortgage</option>
+                                                        </select>
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                            
+                                            <div class="form-group">
+                                                <div class="col-xs-12">
+                                                    <label>Services: </label>
+                                                    <textarea class="form-control" rows="3"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="bootstrap-filestyle input-group">
+                                             <input type="text" class="form-control " placeholder="Bank Logo" disabled=""> 
+                                              <span class="group-span-filestyle input-group-btn" tabindex="0">
+                                               <label for="filestyle-9" class="btn btn-default ">
+                                                <span class="icon-span-filestyle glyphicon glyphicon-folder-open"></span> 
+                                                 <span class="buttonText">Choose file</span>
+                                               </label>
+                                              </span>
+                                            </div>
+                    
+
+
+                    
+                                            <div class="form-group text-right m-t-20 m-b-0">
+                                                <div class="col-xs-12">
+                                                    <button class="btn btn-pink text-uppercase waves-effect waves-light w-sm" type="submit">
+                                                        Sign Up
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            
+                                        </form>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+
+        
+                    </div> <!-- container -->
+
+                </div> <!-- content -->
+
+
+            <div ng-include="'../partials/footer.html'">
+              
+            </div>
+
+            </div>
+
+             <!-- Right Sidebar -->
+            <div class="side-bar right-bar nicescroll">
+
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+            
+            </div>
+            <!-- /Right-bar -->
+
+        </div>
+        <!-- END wrapper -->
