@@ -3,8 +3,11 @@
 angular.module('App.citizen', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/citizen', {
+  $routeProvider.when('/citizens', {
     templateUrl: 'citizen/citizens.html',
+    controller: 'CitizenCtrl'
+  }).when('/citizen', {
+    templateUrl: 'citizen/citizen_detail.html',
     controller: 'CitizenCtrl'
   });
 }])
